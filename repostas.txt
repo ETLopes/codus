@@ -1,0 +1,24 @@
+
+1) Como fazer para mover um código que você está fazendo, ainda não commitado, para uma outra branch.
+
+2) Iniciar uma nova branch a partir de um commit específico de uma outra branch
+
+3) Remover os 2 últimos commits de uma branch remota (note que qualquer um que der pull nessa branch não deverá mais ver esses dois commits)
+
+4) Adicionar um commit específico de uma outra branch à branch corrente
+
+
+1) git checkout -b newbranch
+
+
+2) through hash
+
+git branch newbranch hash
+
+By order 
+
+git branch newbranch HEAD~3
+
+3) git reset --hard HEAD~2
+
+4) git cherry-pick hash
